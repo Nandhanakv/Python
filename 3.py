@@ -1,8 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import seaborn as sns
 
-xpoints = np.array([1,2,6,8])
-ypoints = np.array([3,8,1,10])
-
-plt.plot(xpoints,ypoints)
+sns.distplot([0,1,2,3,4,5],kde=False)
 plt.show()

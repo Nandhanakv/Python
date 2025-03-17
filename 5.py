@@ -1,14 +1,9 @@
-#matplotlib markers
-
-
-
-
-
+import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
 
-
-ypoints = np.array([3,8,1,10,5,7])
-
-plt.plot(ypoints,marker = 'd')
+#Loading dataset
+df =sns.load_dataset("iris")
+print(df)
+sns.barplot(x="species",y="sepal_width",data=df)
+plt.title("Title using matplotlib function")
 plt.show()

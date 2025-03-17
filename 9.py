@@ -1,8 +1,10 @@
-import matplotlib.pyplot as plt
+
+#importing libraries
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
 
-
-ypoints = np.array([3,8,1,10,5,7])
-
-plt.plot(ypoints,marker = 'd',ms=30,mec='g',mfc='g')
-plt.show()
+#importing data
+data = pd.read_csv("electronics_cleaned_csv")
+data.head
