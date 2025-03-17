@@ -1,6 +1,13 @@
+import matplotlib.pyplot as plt
 import numpy as np
 
-arr=np.array([1,2,3,4],dtype='i4')
+x= np.array([80,85,90,95,100,105,110,115,120,125])
+y= np.array([240,250,260,270,280,290,300,310,320,330])
 
-print(arr)
-print(arr.dtype)
+plt.title("sports watch data")
+plt.xlabel("average pules")
+plt.ylabel("calorie burnage")
+plt.plot(x,y)
+plt.grid(axis='y')
+plt.show()
+

@@ -1,12 +1,11 @@
-#enumerate iteration using ndenumerate()
-#enumeration means mentioning sequence number of somthing one by one
-#somthing requred corresponding index of the element while iterating
-#the enmerating () method can be used for usecases
-#enumerator on following 1 D arrays elements
-
-
+import matplotlib.pyplot as plt
 import numpy as np
-arr=np.array([1,2,3,4,5])
-for idx, x  in np.ndenumerate(arr):
-    print(idx,x)
-    
+
+x= np.array([4,6,12,3,4,7,8,12,34,55])
+y= np.array([44,23,44,1,78,23,98,7,55,4])
+sizes = np.array([0,20,30,1000,50,60,70,800,90,100])
+colors = np.array([0,20,30,40,50,60,70,80,90,100])
+
+plt.scatter(x,y,s=sizes,c=colors)
+plt.colorbar()
+plt.show()

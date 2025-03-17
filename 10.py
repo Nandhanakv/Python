@@ -1,3 +1,10 @@
+import matplotlib.pyplot as plt
 import numpy as np
-arr=np.array([1,2,3,4])
-print(arr[2]+arr[3])
+
+
+ypoints = np.array([3,8,1,10,5,7])
+
+plt.plot(ypoints,linestyle = 'dotted',c="m")
+plt.show()
+
+#ls = dotted ':'

@@ -1,10 +1,13 @@
-#dimension in array
-#0-d array
-#
-#0- d array or scalars are the elaements in an array
-#each value in an array is a 0-D array
-#create a 0-D array with 42
+#default x points
+#if we do not specify the points on the x axis they will get the defalult values 0,1,2,3,4 etc
+#depending on the length of the y points
 
+
+import matplotlib.pyplot as plt
 import numpy as np
-arr = np.array(42)
-print(arr)
+
+
+ypoints = np.array([3,8,1,10,5,7])
+
+plt.plot(ypoints)
+plt.show()

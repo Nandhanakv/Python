@@ -1,9 +1,6 @@
-#numpy splitting array
-#array_split ()___method
-#split the array in 2 parts?
-
+import matplotlib.pyplot as plt
 import numpy as np
 
-arr=np.array([1,2,3,4,5,6])
-newarr=np.array_split(arr,3)
-print(newarr)
+x=np.array([20,10,45,69])
+plt.pie(x)
+plt.show()

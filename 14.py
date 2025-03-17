@@ -1,5 +1,8 @@
-#numpyb array slicing
-
+import matplotlib.pyplot as plt
 import numpy as np
-arr=np.array([1,2,3,4,5,6,7])
-print(arr[1:5])
+
+
+ypoints = np.array([3,8,1,10,])
+
+plt.plot(ypoints,linewidth = '20.5')
+plt.show()

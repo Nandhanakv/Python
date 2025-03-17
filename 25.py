@@ -1,11 +1,13 @@
+import matplotlib.pyplot as plt
 import numpy as np
 
-arr = np.array([1.1,2.1,3.1])
-newarr = arr.astype('i')
-print(newarr)
-print(newarr.dtype)
+x= np.array([0,1,3,5,7,9])
+y= np.array([6,7,8,9,10,11])
 
-#coverting data type on next array
-#the data type funvtion craets a copy of array
-#and allows you to specifi  the dsata type as a parametr
-#change data type 
+plt.title("sports watch data")
+plt.xlabel("average pules")
+plt.ylabel("calorie burnage")
+plt.plot(x,y)
+plt.grid(color='r',ls='--')
+plt.show()
+

@@ -1,8 +1,8 @@
-#stacking along rows
-#numpy provides a helper fuction:hastag() to stack along rows
+import matplotlib.pyplot as plt
 
-import numpy as np
-arr1=np.array([1,2,3])
-arr2=np.array([4,5,6])
-arr=np.hstack((arr1,arr2))
-print(arr)
+x = [1,1,1,1,1,2,2,2,2,3,3,3,3,3,4,4,4,4,5,5,5,5]
+plt.hist(x)
+plt.show()
+
+
+

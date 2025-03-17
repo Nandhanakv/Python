@@ -1,7 +1,8 @@
+import matplotlib.pyplot as plt
 import numpy as np
-a=np.array(42)
-b=np.array([1,2,3,4,5,6])
-c=np.array([[1,2,3],[4,5,6]])
-d=np.array([[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]]])
 
-print(a.ndim)
+
+ypoints = np.array([3,8,1,10,5,7])
+
+plt.plot(ypoints,marker = 'd',ms=20,mec='r')
+plt.show()

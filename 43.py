@@ -1,5 +1,9 @@
+import matplotlib.pyplot as plt
 import numpy as np
-arr1=np.array([1,2,3])
-arr2=np.array([4,5,6])
-arr=np.vstack((arr1,arr2))
-print(arr)
+
+x = np.array(["A","B","C","D"])
+
+y = np.array([3,8,1,10])
+
+plt.barh(x,y,color = 'k',height=0.2)
+plt.show()
